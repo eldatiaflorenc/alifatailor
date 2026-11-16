@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alifa Tailor - Jahitan dengan Sentuhan Personal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Sticky Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo-area">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2L3 7v10l9 5 9-5V7l-9-5zm0 2.18l6.82 3.78L12 11.74 5.18 7.96 12 4.18zM5 9.43l6 3.33v6.81l-6-3.33V9.43zm8 10.14v-6.81l6-3.33v6.81l-6 3.33z"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <h1>ALIFA TAILOR</h1>
+                    <span>Sentuhan Personal</span>
+                </div>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Buka Menu">☰</button>
+            <ul id="navMenu">
+                <li><a href="#beranda" class="nav-link">Beranda</a></li>
+                <li><a href="#layanan" class="nav-link">Layanan</a></li>
+                <li><a href="#galeri" class="nav-link">Hasil Jahitan</a></li>
+                <li><a href="#tentang" class="nav-link">Tentang Kami</a></li>
+                <li><a href="#kontak" class="cta-header">Konsultasi Sekarang</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+        <div class="hero-content">
+            <h2>Jahitan yang Pas, untuk Gaya Anda.</h2>
+            <p>Wujudkan pakaian sesuai kebutuhan dan preferensi Anda melalui layanan penjahitan yang mengutamakan detail dan kenyamanan.</p>
+            <a href="#kontak" class="cta-header hero-cta">Konsultasi Sekarang</a>
+            
+            <div class="badges">
+                <div class="badge-item">
+                    <strong>Personal</strong>
+                    <span>Sesuai Kebutuhan</span>
+                </div>
+                <div class="badge-item">
+                    <strong>Detail</strong>
+                    <span>Fokus Jahitan</span>
+                </div>
+                <div class="badge-item">
+                    <strong>Nyaman</strong>
+                    <span>Untuk Anda</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan Kami -->
+    <section id="layanan">
+        <div class="section-header">
+            <span>Apa yang Bisa Kami Bantu</span>
+            <h3>Layanan Jahit Kami</h3>
+            <p class="section-subtitle">Temukan layanan yang sesuai dengan kebutuhan pakaian Anda. Detail pengerjaan dapat didiskusikan saat konsultasi.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div>
+                    <span class="service-num">01 / PENJAHITAN</span>
+                    <h4>Jahit Pakaian</h4>
+                    <p>Diskusikan model, bahan, dan detail pakaian impian Anda untuk diwujudkan dengan potongan presisi.</p>
+                </div>
+                <button class="service-link" onclick="selectService('Jahit Pakaian')">Diskusikan kebutuhan &rarr;</button>
+            </div>
+
+            <div class="service-card">
+                <div>
+                    <span class="service-num">02 / PENYESUAIAN</span>
+                    <h4>Permak Pakaian</h4>
+                    <p>Penyesuaian ukuran, perbaikan jahitan, atau ubahsuai pakaian agar lebih pas dan nyaman dikenakan.</p>
+                </div>
+                <button class="service-link" onclick="selectService('Permak Pakaian')">Diskusikan kebutuhan &rarr;</button>
+            </div>
+
+            <div class="service-card">
+                <div>
+                    <span class="service-num">03 / KONSULTASI</span>
+                    <h4>Konsultasi Jahitan</h4>
+                    <p>Ceritakan ide atau kebutuhan busana Anda untuk mendiskusikan pilihan bahan dan teknik pengerjaan terbaik.</p>
+                </div>
+                <button class="service-link" onclick="selectService('Konsultasi Jahitan')">Mulai konsultasi &rarr;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Hasil Jahitan -->
+    <section id="galeri" class="gallery-section">
+        <div class="section-header">
+            <span>Inspirasi & Detail</span>
+            <h3>Hasil Jahitan</h3>
+            <p class="section-subtitle">Galeri visual sebagai referensi suasana, detail kain, dan proses penjahitan.</p>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- Foto 1: Detail Jas -->
+            <div class="gallery-item">
+                <span class="gallery-caption">Perhatian pada Detail</span>
+                <img src="detail-jas.jpg" alt="Detail jahitan jas dengan list kontras">
+            </div>
+            <!-- Foto 2: Proses Menjahit -->
+            <div class="gallery-item">
+                <span class="gallery-caption">Proses Penjahitan</span>
+                <img src="proses-menjahit.png" style="object-position: center 25%;" alt="Proses penjahitan dengan mesin jahit">
+            </div>
+            <!-- Foto 3: Koleksi Jas -->
+            <div class="gallery-item">
+                <span class="gallery-caption">Inspirasi Gaya</span>
+                <img src="koleksi-jas.jpg" alt="Hasil jahitan jas hitam dan abu-abu">
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami / Sejarah -->
+    <section id="tentang">
+        <div class="about-wrapper">
+            <div class="about-grid">
+                <!-- Foto 4: Tentang Kami -->
+                <div class="about-img">
+                    <img src="tentang-kami.jpg" style="object-position: center 20%;" alt="Suasana Alifa Tailor">
+                </div>
+                <div class="about-text">
+                    <h3>Sejarah Alifa Tailor</h3>
+                    <p>Bapak Sofyan merupakan seorang pengusaha jasa jahit asal Padang Pariaman, kelahiran tahun 1980. Beliau mulai belajar menjahit pada tahun 1996 selama kurang lebih satu tahun dan memiliki keahlian khusus dalam pembuatan jas. Setelah bertahun-tahun mengembangkan keterampilannya, pada tahun 2010 beliau mulai membuka usaha jahit sendiri. Awalnya, beliau menjalankan usaha bersama seorang teman karena keterbatasan modal untuk menyewa tempat. Kemudian, beliau membuka usaha secara mandiri di daerah Jalan Komaruddin, Cakung. Namun, akibat pandemi COVID-19, usahanya sempat ditutup dan dilanjutkan dari rumah. Setelah pandemi berakhir, beliau kembali mengembangkan usahanya dengan membuka tempat jahit di pasar hingga saat ini.</p>
+                    
+                    <p>Dalam menjalankan usahanya, Bapak Sofyan tidak hanya menerima pesanan jas, tetapi juga berbagai jenis pakaian seperti seragam, pakaian perempuan, blankon, dan sarung songket. Beliau mengutamakan kualitas jahitan serta kepuasan pelanggan dengan memanfaatkan jaringan relasi penjahit untuk membantu menyelesaikan pesanan dalam jumlah besar. Ke depannya, beliau berharap usahanya dapat berkembang dan menjangkau lebih banyak pelanggan melalui pemanfaatan media digital seperti Instagram dan Google Maps, sehingga keahlian khususnya dalam membuat jas semakin dikenal masyarakat.</p>
+
+                    <div class="quote-box">
+                        "Pakaian yang baik dimulai dari kebutuhan yang dipahami."
+                    </div>
+                    <p class="about-note">Informasi mengenai layanan, bahan, dan estimasi waktu pengerjaan dapat ditanyakan langsung melalui sesi konsultasi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cara Memesan -->
+    <section>
+        <div class="section-header">
+            <span>Mudah Dimulai</span>
+            <h3>Cara Memesan</h3>
+            <p class="section-subtitle">Mulai dengan menyampaikan kebutuhan, lalu diskusikan detailnya sebelum pengerjaan disepakati.</p>
+        </div>
+
+        <div class="steps-container">
+            <div class="step-card">
+                <span class="step-num">01</span>
+                <h4>Ceritakan Kebutuhan Anda</h4>
+                <p>Jelaskan pakaian atau penyesuaian yang Anda butuhkan melalui formulir konsultasi di bawah.</p>
+            </div>
+            <div class="step-card">
+                <span class="step-num">02</span>
+                <h4>Diskusikan Detail Jahitan</h4>
+                <p>Bahas model, ukuran, bahan, dan detail pengerjaan yang diperlukan bersama penjahit.</p>
+            </div>
+            <div class="step-card">
+                <span class="step-num">03</span>
+                <h4>Lanjutkan Proses Jahit</h4>
+                <p>Konfirmasikan kebutuhan dan kesepakatan pengerjaan untuk memulai pembuatan busana.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak & Formulir Konsultasi -->
+    <section id="kontak">
+        <div class="contact-section">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span>Mari Mulai Percakapan</span>
+                    <h3>Diskusikan Kebutuhan Anda.</h3>
+                    <p>Isi formulir berikut untuk mengirimkan permintaan konsultasi atau kunjungi media sosial resmi kami di bawah ini.</p>
+                    
+                    <div class="info-item">
+                        <strong>Lokasi:</strong>
+                        <span>Pasar Sunan Giri, Rawamangun, Jakarta Timur</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Telepon / WhatsApp:</strong>
+                        <a href="https://wa.me/6281389069532?text=Halo%20Alifa%20Tailor,%20saya%20ingin%20bertanya%20mengenai%20layanan%20jahit." target="_blank" class="wa-text-link">0813-8906-9532 (Klik untuk Chat)</a>
+                    </div>
+                    <div class="info-item">
+                        <strong>Instagram / TikTok:</strong>
+                        <span>@alifa.tailor / @alifa_tailor</span>
+                    </div>
+                </div>
+
+                <div>
+                    <form id="consultForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama" class="form-control" placeholder="Nama Anda" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="kontakUser">Nomor HP / Email</label>
+                            <input type="text" id="kontakUser" class="form-control" placeholder="Nomor HP atau email yang bisa dihubungi" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="jenisKebutuhan">Jenis Kebutuhan</label>
+                            <select id="jenisKebutuhan" class="form-control" required>
+                                <option value="" disabled selected>Pilih kebutuhan layanan</option>
+                                <option value="Jahit Pakaian">Jahit Pakaian</option>
+                                <option value="Permak Pakaian">Permak Pakaian</option>
+                                <option value="Konsultasi Jahitan">Konsultasi Jahitan</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pesan">Ceritakan Kebutuhan Anda</label>
+                            <textarea id="pesan" class="form-control" placeholder="Ceritakan model, ukuran, atau detail yang diinginkan..." required></textarea>
+                        </div>
+
+                        <!-- Grup Tombol Aksi Utama (WhatsApp, TikTok, Instagram) -->
+                        <div class="action-buttons-group">
+                            <button type="submit" class="btn-action btn-wa">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+                                Konsultasi via WhatsApp
+                            </button>
+
+                            <a href="https://www.tiktok.com/@alifa_tailor?_r=1&_t=ZS-9BROIaMALZe" target="_blank" class="btn-action btn-tiktok">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                                Kunjungi TikTok Kami
+                            </a>
+
+                            <a href="https://www.instagram.com/alifa.tailor?rpxt=MWJwN2djN3pmODRsMA==" target="_blank" class="btn-action btn-ig">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                                Kunjungi Instagram Kami
+                            </a>
+                        </div>
+                    </form>
+
+                    <!-- Ringkasan Hasil Submit -->
+                    <div id="summaryCard" class="summary-card">
+                        <h4>Ringkasan Permintaan Konsultasi</h4>
+                        <p><strong>Nama:</strong> <span id="sumNama"></span></p>
+                        <p><strong>Kontak:</strong> <span id="sumKontak"></span></p>
+                        <p><strong>Layanan:</strong> <span id="sumLayanan"></span></p>
+                        <p><strong>Catatan:</strong> <span id="sumPesan"></span></p>
+                        <p class="summary-note">* Mengarahkan otomatis ke WhatsApp Alifa Tailor. Jika belum terbuka, <a id="manualWaLink" href="#" target="_blank" style="color: var(--champagne); text-decoration: underline;">klik di sini</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Quick Button -->
+    <a href="https://wa.me/6281389069532?text=Halo%20Alifa%20Tailor,%20saya%20ingin%20konsultasi%20mengenai%20jahitan." target="_blank" class="wa-float" title="Chat Langsung di WhatsApp">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+        </svg>
+    </a>
+
+    <!-- Floating Back to Top -->
+    <a href="#beranda" class="back-to-top" title="Kembali ke atas">&#8593;</a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Alifa Tailor<br>Hak cipta dilindungi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+      </html>
