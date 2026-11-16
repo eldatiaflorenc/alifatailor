@@ -287,14 +287,14 @@ section {
     text-decoration: underline;
 }
 
-/* Gallery Section */
+/* Gallery / Portofolio Section */
 .gallery-section {
     background-color: #f3ebd8;
 }
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
 
@@ -506,7 +506,7 @@ textarea.form-control {
     min-height: 120px;
 }
 
-/* Styling Grup Tombol Aksi (WhatsApp, TikTok, Instagram) */
+/* Styling Tombol Aksi */
 .action-buttons-group {
     display: flex;
     flex-direction: column;
